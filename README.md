@@ -3,35 +3,35 @@ Design Patterns in .Net Core context using C#
 
 ## Creational Patterns
 
-- Factory Method 
-- Abstract Factory
-- Builder
-- Prototype
-- Object Pool
-- Singleton
+- Factory Method _(Creates an instance of several derived classes)_
+- Abstract Factory _(Creates an instance of several families of classes)_
+- Builder _(Separates object construction from its representation)_
+- Prototype _(A fully initialized instance to be copied or cloned)_
+- Object Pool _(Creates an instance of several families of classes)_
+- Singleton _(A class of which only a single instance can exist)_
 
 ## Structural Patterns
 
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Private Class Data
-- Proxy
+- Adapter _(Match interfaces of different classes)_
+- Bridge _(Separates an object's interface from its implementation)_
+- Composite _(A tree structure of simple and composite objects)_
+- Decorator _(Add responsibilities to objects dynamically)_
+- Facade _(A single class that represents an entire subsystem)_
+- Flyweight _(A fine-grained instance used for efficient sharing)_
+- Private Class Data _(Restricts accessor/mutator access)_
+- Proxy _(An object representing another object)_
 
 ## Behavioral Patterns
 
-- Chain of responsibility
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- Null Object
-- State
-- Strategy
-- Template Method
-- Visitor
+- Chain of responsibility _(A way of passing a request between a chain of objects)_
+- Command _(Encapsulate a command request as an object)_
+- Interpreter _(A way to include language elements in a program)_
+- Iterator _(Sequentially access the elements of a collection)_
+- Mediator _(Defines simplified communication between classes)_
+- Memento _(Capture and restore an object's internal state)_
+- Observer _(A way of notifying change to a number of classes)_
+- Null Object _(Designed to act as a default value of an object)_
+- State _(Alter an object's behavior when its state changes)_
+- Strategy _(Encapsulates an algorithm inside a class)_
+- Template Method _(Defer the exact steps of an algorithm to a subclass)_
+- Visitor _(Defines a new operation to a class without change)_
