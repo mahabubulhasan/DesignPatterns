@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{ED5A8564-D616-4DF0-878F-40C4DB82483F}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{072B960E-7E72-4B6A-B87B-AD2649404D93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{376E5B28-CDEC-444D-B3D9-23F06AE2B54E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{376E5B28-CDEC-444D-B3D9-23F06AE2B54E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{476B8F5F-DDE9-4E5D-A66F-8DF08047B3DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{376E5B28-CDEC-444D-B3D9-23F06AE2B54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{376E5B28-CDEC-444D-B3D9-23F06AE2B54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376E5B28-CDEC-444D-B3D9-23F06AE2B54E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{476B8F5F-DDE9-4E5D-A66F-8DF08047B3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{476B8F5F-DDE9-4E5D-A66F-8DF08047B3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{476B8F5F-DDE9-4E5D-A66F-8DF08047B3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{476B8F5F-DDE9-4E5D-A66F-8DF08047B3DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
