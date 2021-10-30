@@ -1,0 +1,1 @@
+﻿# Abstract Factory pattern
