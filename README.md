@@ -32,6 +32,6 @@ Design Patterns in .Net Core context using C#
 - [Observer](./Observer/README.md) _(A way of notifying change to a number of classes)_
 - Null Object _(Designed to act as a default value of an object)_
 - State _(Alter an object's behavior when its state changes)_
-- Strategy _(Encapsulates an algorithm inside a class)_
+- [Strategy](./Strategy/README.md) _(Encapsulates an algorithm inside a class)_
 - Template Method _(Defer the exact steps of an algorithm to a subclass)_
 - Visitor _(Defines a new operation to a class without change)_
