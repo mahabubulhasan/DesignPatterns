@@ -1,46 +1,32 @@
 ﻿using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
 
 namespace Prototype
 {
-    [Serializable]
     class Person
     {
         public int Age { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Name { get; set; }
         public Address Address { get; set; }
-
-        public Car ShallowCopy()
-        {
-            return (Car)this.MemberwiseClone();
-        }
-
     }
 
-    [Serializable]
     class Address
     {
-        public string area;
-        public int houseNo;
-
-        public Address(string area, int houseNo)
-        {
-            this.area = area;
-            this.houseNo = houseNo;
-        }
+        public string Area { get; set; }
+        public int HouseNo { get; set; }
     }
 
     public static class Extensions
     {
         public static T DeepCopy<T>(this T self)
         {
-            using var stream = new MemoryStream();
-            BinaryFormatter formatter = new BinaryFormatter();
-            formatter.Serialize(stream, self);
-            stream.Seek(0, SeekOrigin.Begin);
-            return (T)formatter.Deserialize(stream);
+            var options = new JsonSerializerOptions
+            {
+                IncludeFields = true,
+            };
+            var jsonString = JsonSerializer.Serialize(self);
+            return JsonSerializer.Deserialize<T>(jsonString);
         }
     }
 
@@ -54,24 +40,23 @@ namespace Prototype
         static void Main(string[] args)
         {
 
-            // Serialization Approch
-            var person1 = new Person()
+            // Serialization Approch            
+            var person1 = new Person
             {
                 Name = "Mahabubul Hasan",
                 Age = 35,
                 DateOfBirth = DateTime.Today,
-                Address = new Address("Mohammadi Housing Society", 131)
+                Address = new Address { Area = "Mohammadi Housing Society", HouseNo = 131 }
             };
 
             var person2 = person1.DeepCopy();
-            person2.Address.area = "Mohammadpur";
+            person2.Address.Area = "Mohammadpur";
 
-            Console.WriteLine(person1.Address.area);
-            Console.WriteLine(person2.Address.area);
+            Console.WriteLine(person1.Address.Area);
+            Console.WriteLine(person2.Address.Area);
 
             // Alternate approch
-
-            var car1 = new Car() { Brand = "Toyota", Model = new Model() { Year = "2019" } };
+            var car1 = new Car { Brand = "Toyota", Model = new Model { Year = "2019" } };
             var car2 = car1.DeepCopy();
             car2.Model.Year = "2020";
 
