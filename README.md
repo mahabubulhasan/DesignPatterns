@@ -35,3 +35,7 @@ Design Patterns in .Net Core context using C#
 - [Strategy](./Strategy/README.md) _(Encapsulates an algorithm inside a class)_
 - Template Method _(Defer the exact steps of an algorithm to a subclass)_
 - Visitor _(Defines a new operation to a class without change)_
+
+### References
+- https://sourcemaking.com/design_patterns
+- https://refactoring.guru/design-patterns
